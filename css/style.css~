@@ -1,0 +1,81 @@
+body{
+  background: linear-gradient(lightgray, darkgray);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+button{
+  background-color: darkgray;
+  border: none;
+  border-bottom: solid 5px darkgray;
+  font-weight: bold;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+button:hover{
+  border-color: #00FF33;
+}
+
+div{
+  background-color: darkgray;
+  border-color: lightgray;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  margin: 0 auto 0 auto;
+  max-width: 80%;
+  min-width: 350px;
+}
+
+input{
+  margin-left: 10px;
+}
+
+li{
+  display: table-cell;
+  float: left;
+}
+
+li:first-child{
+  margin-left: 10px;
+}
+
+li:last-child{
+  margin-right: 10px;
+}
+
+nav{
+  display: block;
+  margin: 0 auto 0 auto;  
+}
+
+table{
+  border-collapse: collapse;
+  margin: 15px;
+}
+
+td{
+  padding: 0 10px;
+}
+
+tr{
+  border-top: solid 1px lightgray;
+}
+
+ul{
+  display: table;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  border-color: #00FF00;
+}
+
+.hide{
+  display: none;
+}

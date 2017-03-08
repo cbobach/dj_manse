@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset='UTF-8'>
+		<title>DJ-Manse</title>
+		<link rel='stylesheet'
+					type='text/css'
+					href='css/style.css'>
+		
+		<script src='js/jquery-2.1.1.min.js'></script>
+		
+		<script src='js/createTable.js'></script>
+		<script src='js/createList.js'></script>
+		<script src='js/handleCategories.js'></script>
+		<script src='js/handleSearch.js'></script>
+		
+		<script src='js/songs.js'></script>
+		<script src='js/categories.js'></script>
+		
+		<script src='js/main.js'></script>
+		<script>
+		  $(document).ready(main)
+		  
+		  function toggleAllSongs(){
+		    categoriesToShow = []
+		    $('.active').removeClass('active')
+		    showCategories(categoriesToShow)
+		  }
+		</script>
+	</head>
+	<body>
+	  <div id='navigation'>
+      <nav id='categories'></nav>
+		  <nav id='toggleAll'>
+		    <input type='text' autofocus>
+        <button onclick='toggleAllSongs()'>Clear categories</button>
+		  </nav>
+		</div>
+		<div id='content'></div>
+	</body>
+</html>
